@@ -4,7 +4,7 @@ name: SIAFI
 description: SIAFI
 
 versions:
-  - 1.0.0a
+  - 1.0.0
 
 additional-dependencies:
   - apache-airflow>=2.1.0
