@@ -3,7 +3,7 @@ __all__ = ['VERSION']
 import yaml
 import os
 
-VERSION = '1.0.1'
+VERSION = '1.1.2'
 
 
 def get_provider_info() -> dict:

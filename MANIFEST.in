@@ -1,1 +1,1 @@
-recursive-include siafi *.yaml
+recursive-include eb/airflow/providers *.yaml
