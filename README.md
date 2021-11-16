@@ -19,6 +19,11 @@ pip install eb-airflow-providers-siafi
 ```python
 from eb_airflow.providers.siafi.hooks.siafi import SIAFIHook
 
-...
+
+with SIAFIHook('id_conexao') as hook:
+    cpf = hook.cpf
+    senha = hook.senha
+
+    ...
 ```
 
