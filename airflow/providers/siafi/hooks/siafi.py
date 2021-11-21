@@ -67,7 +67,7 @@ class SIAFIHook(BaseHook):
             f'Conta com CPF "{self.cpf}" não está ativa'
         )
 
-    def __exit__(self) -> None:
+    def __exit__(self, *args, **kwargs) -> None:
         return
 
     @property

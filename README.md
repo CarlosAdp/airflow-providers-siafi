@@ -1,11 +1,11 @@
-# eb-airflow-providers-siafi
+# airflow-providers-siafi
 
 Provider para interações com o SIAFI e seus sistemas derivados
 
 ## Instalação
 
 ```shell
-pip install eb-airflow-providers-siafi
+pip install airflow-providers-siafi
 ```
 
 ## Conteúdo
@@ -17,7 +17,7 @@ pip install eb-airflow-providers-siafi
 ## Uso
 
 ```python
-from eb_airflow.providers.siafi.hooks.siafi import SIAFIHook
+from airflow.providers.siafi.hooks.siafi import SIAFIHook
 
 
 with SIAFIHook('id_conexao') as hook:

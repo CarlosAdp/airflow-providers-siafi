@@ -3,11 +3,11 @@ __all__ = ['VERSION']
 import yaml
 import os
 
-VERSION = '1.2.0'
+VERSION = '2.0.0'
 
 
 def get_provider_info() -> dict:
-    '''Retorna metadados sobre o provider para incorporar ao Airflow.'''
+    '''Retorna metadados do provider.'''
 
     base_dirpath = os.path.abspath(os.path.dirname(__file__))
 
