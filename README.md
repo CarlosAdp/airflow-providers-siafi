@@ -12,7 +12,7 @@ pip install airflow-providers-siafi
 
 - Hook e tipo de conexão "Conta do SIAFI"
 
-![Imagem para conexão "Conta do SIAFI"](https://i.imgur.com/qA0kGB5.png)
+![Imagem para conexão "Conta do SIAFI"](https://i.imgur.com/od8J8EY.png)
 
 ## Uso
 

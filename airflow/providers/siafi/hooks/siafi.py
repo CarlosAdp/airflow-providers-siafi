@@ -150,11 +150,9 @@ class SIAFIHook(BaseHook):
     @staticmethod
     def get_connection_form_widgets() -> Dict[str, Any]:
         '''Retorna formulário de conexão siafi'''
-        from flask_appbuilder.fieldwidgets import (
-            BS3TextFieldWidget, Select2Widget
-        )
+        from flask_appbuilder.fieldwidgets import BS3TextFieldWidget
         from flask_babel import lazy_gettext
-        from wtforms import BooleanField, StringField, SelectField, widgets
+        from wtforms import BooleanField, IntegerField, StringField, widgets
 
         return {
             'extra__siafi__nome': StringField(
@@ -165,10 +163,9 @@ class SIAFIHook(BaseHook):
                 lazy_gettext('UG'),
                 widget=BS3TextFieldWidget()
             ),
-            'extra__siafi__nivel': SelectField(
+            'extra__siafi__nivel': IntegerField(
                 lazy_gettext('Nível'),
-                choices=list(range(1, 10)),
-                widget=Select2Widget(),
+                widget=BS3TextFieldWidget(),
             ),
             'extra__siafi__esta_ativo': BooleanField(
                 lazy_gettext('Está ativo'),

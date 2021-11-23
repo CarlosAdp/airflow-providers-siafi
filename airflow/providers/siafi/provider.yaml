@@ -5,6 +5,7 @@ description: SIAFI
 
 versions:
   - 2.0.2
+  - 2.0.3
 
 additional-dependencies:
   - apache-airflow>=2.1.0
